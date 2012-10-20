@@ -6,17 +6,12 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', :group => [:development, :test]
+gem 'rspec-rails', :group => [:development, :test]
 group :production do
   gem'thin'
   gem 'pg'
 end
 
-group :development do
-  gem 'rspec-rails'
-end
-group :test do
-  gem 'rspec-rails'
-end
 
 # Gems used only for assets and not required
 # in production environments by default.
